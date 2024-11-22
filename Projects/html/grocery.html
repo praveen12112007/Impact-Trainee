@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GROCERY MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="GroceryManagementSystem.css">
+    <link rel="icon" type="image/x-icon" href="grocerymanasys.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>GMS WAREHOUSE</h1>
+    <h1 style="font-size:5vw">Hello World</h1>
+    <br>
+    <br>
+    <FORM action="/action_page.php" style="text-align: center;"  >
+        <div>
+            <label for="NAME"><p>NAME</p></label>
+            <input type="text" name="NAME" id="NAME" size="50" required> 
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="ROLE"><p>ROLE</p></label>
+            <select name="ROLE" id="ROLE" required>
+                <option value=" ">  </option>
+                <option value="MANAGER">MANAGER</option>
+                <option value="CUSTOMER">CUSTOMER</option>
+                <option value="EMPLOYEE">EMPLOYEE</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="EMP ID"><p> EMPLOYEE ID </p></label>
+            <input type="number" name="EMP ID" id="EMP ID" min="0" max="100" required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2>CLICK HERE TO KNOW THE LIST</h2>
+            <!-- <button onclick="document.location='groceryitems.html'" >CLICK HERE</button> -->
+            <!-- <button onclick="document.location='groceryitems.html'"  title="click her to know the list of items" >CLICK HERE</button> -->
+            <a href="groceryitems.html" target="_blank">
+                <img src="coco.jpg" alt="An HTML Image" style="width: 100px; height: 100px;"> </a>
+            
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="ITEMS SELECTED" ><b><p>SELECT THE ITEMS TO BUY</p></b></label>
+            <br>
+            <br>
+            <input type="checkbox" name="BREAD" id="BREAD" value="BREAD">
+            <label for="BREAD" >BREAD</label> <br>
+            <input type="checkbox" name="RICE" id="RICE" value="RICE">
+            <label for="RICE">RICE</label> <br>
+            <input type="checkbox" name="EGGS" id="EGGS" value="EGGS">
+            <label for="EGGS">EGGS</label> <br>
+            <input type="checkbox" name="CHOCOLATE" id="CHOCOLATE" value="CHOCOLATE">
+            <label for="CHOCOLATE">CHOCOLATE</label> <br>
+            <input type="checkbox" name="WHEAT" id="WHEAT" value="WHEAT">
+            <label for="WHEAT">WHEAT</label>
+        </div>
+        <br> <br>
+        <div>
+            <button type="submit">SUBMIT</button>
+            <!-- <input type="submit" value="submit"> -->
+        </div>
+    </FORM>
+</body>
+</html>
